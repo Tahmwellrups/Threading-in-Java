@@ -15,11 +15,6 @@ public class Main {
         sortThread.start();
         sortThread.join();
 
-
-
-
-
-
         System.out.println("All threads have completed.");
 
     }
