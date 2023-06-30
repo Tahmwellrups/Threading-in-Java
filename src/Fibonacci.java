@@ -16,7 +16,7 @@ public class Fibonacci extends Thread {
         }
         System.out.println();
         long t = ProcessHandle.current().pid();
-        System.out.println(t + " PID");
+        System.out.println( "PID: " + t);
 
     }
 }
