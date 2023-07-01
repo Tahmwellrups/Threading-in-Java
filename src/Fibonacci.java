@@ -1,8 +1,11 @@
+import java.util.Random;
+
 public class Fibonacci extends Thread {
     @Override
     public synchronized void run()
     {
-        int no = 10;
+        Random random = new Random();
+        int no = random.nextInt(10);
         int first = 0;
         int second = 1;
 
@@ -10,7 +13,7 @@ public class Fibonacci extends Thread {
         System.out.println( "\nPID: " + t + ", Thread ID: 1");
 
         System.out.print("Fibonacci: ");
-        for (int i = 1; i <= no; i++)
+        for (int i = 0; i < no; i++)
         {
             System.out.print(first + " ");
             int sum = first + second;
