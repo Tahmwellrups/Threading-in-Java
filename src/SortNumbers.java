@@ -6,7 +6,7 @@ public class SortNumbers extends Thread {
     public synchronized void run()
     {
 
-        int[] arr ={25,23,69,1337,420,21};
+        int[] arr ={25,23,69,1337,420,21,8,31,12,911};
 
         long t = ProcessHandle.current().pid();
         System.out.println( "\n\nPID: " + t + ", Thread ID: 3");
