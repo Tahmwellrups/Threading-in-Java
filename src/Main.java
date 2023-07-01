@@ -1,3 +1,8 @@
+/*Leader: Tupas, Ramwell P.
+Members:
+Arellano, Micko James D.
+Fernandez, Tristan Jay H.
+Nifas, Hendrickson R.*/
 
 public class Main {
 
