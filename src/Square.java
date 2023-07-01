@@ -7,11 +7,11 @@ public class Square extends Thread {
         // Generate random integer between 0 and 9
         int no = random.nextInt(10);
 
-        System.out.print("\nSquare of " + no + ": ");
-        System.out.print(no * no);
-        System.out.println();
         long t = ProcessHandle.current().pid();
-        System.out.println( "PID: " + t);
+        System.out.println( "\n\nPID: " + t + ", Thread ID: 2");
+
+        System.out.print("Square of " + no + ": ");
+        System.out.print(no * no);
     }
 
 }

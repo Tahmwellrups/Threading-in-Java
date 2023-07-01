@@ -7,7 +7,11 @@ public class SortNumbers extends Thread {
     {
 
         int[] arr ={25,23,69,1337,420,21};
-        System.out.println("\nThe unsorted array is: ");
+
+        long t = ProcessHandle.current().pid();
+        System.out.println( "\n\nPID: " + t + ", Thread ID: 3");
+
+        System.out.print("The unsorted array is: ");
         for (int no : arr)
         {
             System.out.print(no + " ");
@@ -18,9 +22,5 @@ public class SortNumbers extends Thread {
         {
             System.out.print(no + " ");
         }
-        System.out.println();
-        long t = ProcessHandle.current().pid();
-        System.out.println( "PID: " + t);
     }
-
 }

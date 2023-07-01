@@ -5,7 +5,11 @@ public class Fibonacci extends Thread {
         int no = 10;
         int first = 0;
         int second = 1;
-        System.out.print("\nFibonacci: ");
+
+        long t = ProcessHandle.current().pid();
+        System.out.println( "\nPID: " + t + ", Thread ID: 1");
+
+        System.out.print("Fibonacci: ");
         for (int i = 1; i <= no; i++)
         {
             System.out.print(first + " ");
@@ -14,9 +18,5 @@ public class Fibonacci extends Thread {
             second = sum;
 
         }
-        System.out.println();
-        long t = ProcessHandle.current().pid();
-        System.out.println( "PID: " + t);
-
     }
 }

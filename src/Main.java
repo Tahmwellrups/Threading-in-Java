@@ -1,3 +1,4 @@
+
 public class Main {
 
     public  static void main(String[] args) throws InterruptedException{
@@ -7,15 +8,14 @@ public class Main {
         SortNumbers sortThread = new SortNumbers();
 
         // Start each thread
-        // Use join method to wait for all threads to complete
         fibonacciThread.start();
-        fibonacciThread.join();
+        fibonacciThread.join(3000);
         squareThread.start();
-        squareThread.join();
+        squareThread.join(3000);
         sortThread.start();
         sortThread.join();
 
-        System.out.println("All threads have completed.");
+        System.out.println("\n\nAll threads have completed.");
 
     }
 }
